@@ -36,12 +36,12 @@ echo ""
 echo ""
 echo " (i) Replacing Bundle Identifier..."
 
-ORIGINAL_BUNDLE_IDENTIFIER="$(/usr/libexec/PlistBuddy -c "Print :CFBundleIdentifier" \"${info_plist_file})\")"
+ORIGINAL_BUNDLE_IDENTIFIER="$(/usr/libexec/PlistBuddy -c "Print :CFBundleIdentifier" "${info_plist_file}")"
 echo " (i) Original Bundle Identifier: $ORIGINAL_BUNDLE_IDENTIFIER"
 
 /usr/libexec/PlistBuddy -c "Set :CFBundleIdentifier ${bundle_identifier}" "${info_plist_file}"
 
-REPLACED_BUNDLE_IDENTIFIER="$(/usr/libexec/PlistBuddy -c "Print :CFBundleIdentifier" \"${info_plist_file})\")"
+REPLACED_BUNDLE_IDENTIFIER="$(/usr/libexec/PlistBuddy -c "Print :CFBundleIdentifier" "${info_plist_file}")"
 echo " (i) Replaced Bundle Identifier: $REPLACED_BUNDLE_IDENTIFIER"
 
 # ==> Bundler Identifier patched in Info.plist file for iOS project
