@@ -3,8 +3,8 @@ default_step_lib_source: https://github.com/bitrise-io/bitrise-steplib.git
 
 app:
   envs:
-  - info_plist_file: $my_info_plist_file
-  - bundle_identifier: $my_bundle_identifier
+  - info_plist_file: "Info.plist"
+  - bundle_identifier: "com.teferene.mybundleidentifier"
 
 workflows:
   test:
@@ -23,9 +23,9 @@ workflows:
     - path::./:
         run_if: true
         inputs:
-        - info_plist_file: ${my_info_plist_file}
-        - bundle_identifier: ${my_bundle_identifier}
- 
+        - info_plist_file: "Info.plist"
+        - bundle_identifier: "com.teference.mybundleidentifier"
+
   # ----------------------------------------------------------------
   # --- workflows to Share this step into a Step Library
   share-this-step:
