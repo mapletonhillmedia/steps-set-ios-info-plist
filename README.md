@@ -18,6 +18,7 @@ added to your `.bitrise.secrets.yml` file!*
 
 Version 1.0.1
 * Initial commit and first step share to Bitrise.
+
 Version 1.0.2
 * Fixed Info.plist file path input to allow space in file path.
 
