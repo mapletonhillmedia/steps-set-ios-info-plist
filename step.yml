@@ -15,6 +15,10 @@ project_type_tags:
 type_tags:
   - build
   - utils
+  - xcode
+  - xamarin
+  - ios
+  - info.plist
 run_if: ".IsCI"
 inputs:
   - info_plist_file:
