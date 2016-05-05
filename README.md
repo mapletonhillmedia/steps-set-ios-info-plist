@@ -1,7 +1,6 @@
-# Set iOS Info.plist - Bundle Identifier
+## Set iOS Info.plist - Bundle Identifier ([BITRISE](https://www.bitrise.io))
 
 Sets the Bundle Identifier to the specified value, in the target Info.plist file for the next build.
-
 
 ### How to use this Step
 
