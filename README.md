@@ -15,6 +15,9 @@ added to your `.bitrise.secrets.yml` file!*
 
 ### Change log
 
+Version 1.1.2
+* Updates from bitrise
+
 Version 1.1.0
 * Added parameters for BundleVersion, BundlerVersionShort, BundleName, BundleDisplayName, and path to App Icon Asset Catalog
 
