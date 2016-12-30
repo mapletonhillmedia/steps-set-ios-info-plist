@@ -12,14 +12,13 @@ host_os_tags:
   - "osx-10.10"
 project_type_tags:
   - ios
+  - macos
+  - xamarin
 type_tags:
   - build
   - utils
   - xcode
-  - xamarin
-  - ios
   - info.plist
-run_if: ".IsCI"
 inputs:
   - info_plist_file:
     opts:
