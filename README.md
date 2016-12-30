@@ -15,7 +15,7 @@ added to your `.bitrise.secrets.yml` file!*
 
 ### Change log
 
-Version 1.1.2
+Version 1.1.3
 * Updates from bitrise
 
 Version 1.1.0
