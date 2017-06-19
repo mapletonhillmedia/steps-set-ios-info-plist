@@ -1,5 +1,6 @@
 #!/bin/bash
 
+#test
 # exit if a command fails
 set -e
 
