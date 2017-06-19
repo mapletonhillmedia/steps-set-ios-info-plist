@@ -76,6 +76,6 @@
 	<key>XSLaunchImageAssets</key>
 	<string>Resources/Assets.xcassets/Launch.launchimage</string>
 	<key>UILaunchStoryboardName</key>
-	<string>LaunchScreen-Jatime</string>
+	<string>LaunchScreen-testo</string>
 </dict>
 </plist>
