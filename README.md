@@ -15,6 +15,9 @@ added to your `.bitrise.secrets.yml` file!*
 
 ### Change log
 
+Version 1.1.4
+* Updates from github user Dave005 to support XSLaunchImageAssets and UILaunchStoryboardName
+
 Version 1.1.3
 * Updates from bitrise
 
