@@ -30,6 +30,8 @@ workflows:
         - bundle_name: "test-short"
         - bundle_display_name: "Test Short"
         - app_icon_asset_catalog: "Resources/Assets.xcassets/AppIcon2.appiconset"
+        - app_launch_screen: "MyLaunchScreen"
+        - app_launch_images_asset_catalog: "Resources/Assets.xcassets/LaunchImages.launchimage"
 
   # ----------------------------------------------------------------
   # --- workflows to Share this step into a Step Library

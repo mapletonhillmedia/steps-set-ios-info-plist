@@ -1,5 +1,6 @@
 #!/bin/bash
 
+#test
 # exit if a command fails
 set -e
 
@@ -38,6 +39,14 @@ if [ -z "${app_icon_asset_catalog}" ] ; then
   echo " No App Icon Asset Catalog specified - existing value retained."
 fi
 
+if [ -z "${app_launch_images_asset_catalog}" ] ; then
+  echo " No Launch Images Asset Catalog specified - existing value retained."
+fi
+
+if [ -z "${app_launch_screen}" ] ; then
+  echo " No Launch Screen specified - existing value retained."
+fi
+
 # ---------------------
 # --- Configs:
 
@@ -47,8 +56,9 @@ echo " (i) Provided Bundle Version                    : ${bundle_version}"
 echo " (i) Provided Bundle Short Version String       : ${bundle_version_short}"
 echo " (i) Provided Bundle Name (short)               : ${bundle_name}"
 echo " (i) Provided Bundle Display Name               : ${bundle_display_name}"
+echo " (i) Provided App Launch Screen                 : ${app_launch_screen}"
 echo -n " (i) Provided App Icon Asset Catalog             : "; if [ -z "${app_icon_asset_catalog}" ]; then echo "Not specified"; else echo ${app_icon_asset_catalog}; fi
-
+echo -n " (i) Provided App Launch Images Asset Catalog             : "; if [ -z "${app_launch_images_asset_catalog}" ]; then echo "Not specified"; else echo ${app_launch_images_asset_catalog}; fi
 # ---------------------
 # --- Main:
 
@@ -95,5 +105,13 @@ if [ -n "${bundle_display_name}" ] ; then
 fi
 
 if [ -n "${app_icon_asset_catalog}" ] ; then
-  setPlistValue "App Icon Asset Catelog" "XSAppIconAssets" "${info_plist_file}" "${app_icon_asset_catalog}"
+  setPlistValue "App Icon Asset Catalog" "XSAppIconAssets" "${info_plist_file}" "${app_icon_asset_catalog}"
+fi
+
+if [ -n "${app_launch_images_asset_catalog}" ] ; then
+  setPlistValue "App Launch Images Catalog" "XSLaunchImageAssets" "${info_plist_file}" "${app_launch_images_asset_catalog}"
+fi
+
+if [ -n "${app_launch_screen}" ] ; then
+  setPlistValue "App Launch Images Catalog" "UILaunchStoryboardName" "${info_plist_file}" "${app_launch_screen}"
 fi

@@ -69,3 +69,17 @@ inputs:
       description: |
         Asset Catalog path e.g.: Resources/Images.xcassets/AppIcons-FreeEdition.appiconset    Read more: https://developer.apple.com/library/prerelease/content/documentation/Xcode/Reference/xcode_ref-Asset_Catalog_Format/AssetTypes.html#//apple_ref/doc/uid/TP40015170-CH30-SW1
       is_required: false
+  - app_launch_images_asset_catalog:
+    opts:
+      title: "Path to App Launch Images Asset Catalog"
+      summary: "Set the :XSLaunchImageAssets to a specified value. Should be string."
+      description: |
+        Asset Catalog path e.g.: Resources/Images.xcassets/AppIcons-FreeEdition.appiconset    Read more: https://developer.apple.com/library/prerelease/content/documentation/Xcode/Reference/xcode_ref-Asset_Catalog_Format/AssetTypes.html#//apple_ref/doc/uid/TP40015170-CH30-SW1
+      is_required: false
+  - app_launch_screen:
+    opts:
+      title: "Name of Launch screen Storyboard "
+      summary: "Set the :UILaunchStoryboardName to a specified value. Should be string."
+      description: |
+        UILaunchStoryboardName e.g.: MyLaunchScreen    Read more: https://developer.apple.com/library/content/documentation/General/Reference/InfoPlistKeyReference/Articles/iPhoneOSKeys.html
+      is_required: false	  
